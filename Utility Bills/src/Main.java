@@ -1,10 +1,13 @@
 public class Main {
     public static void main(String[] args) {
+        
 
 
         ResidentalRate resident = new ResidentalRate();
         resident.setElectricalConsumptionAmount(2500);
         System.out.println(resident.calculateElectricityBill());
+        resident.setCubicMeters(34);
+        System.out.println(resident.calculateWaterBill());
     }
 }
 
