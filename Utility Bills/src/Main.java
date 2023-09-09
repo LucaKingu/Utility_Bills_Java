@@ -1,6 +1,17 @@
 public class Main {
     public static void main(String[] args) {
 
+
+        ResidentalRate resident = new ResidentalRate();
+        resident.setConsumptionAmount(2500);
+        System.out.println(resident.calculateElectricity());
+    }
+}
+
+
+
+
+
         /*
             INTERFACE > ELECTRICITYCALCULATOR
             INTERFACE > WATERCALCULATOR
@@ -14,7 +25,3 @@ public class Main {
                      Tariff
 
         */
-
-
-    }
-}
