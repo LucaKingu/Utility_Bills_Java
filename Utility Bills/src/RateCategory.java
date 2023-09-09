@@ -1,24 +1,22 @@
-import java.util.Scanner;
-
 public class RateCategory {
 
-    private int consumptionAmount = 0;
-    private double tariff = 0;
+    private int electricalConsumptionAmount = 0;
+    private double electricalTariff = 0;
 
-    public int getConsumptionAmount(){
-        return consumptionAmount;
+    public int getElectricalConsumptionAmount(){
+        return electricalConsumptionAmount;
     }
 
-    public double getTariff(){
-        return tariff;
+    public double getElectricalTariff(){
+        return electricalTariff;
     }
 
-    public void setConsumptionAmount(int amount){
-        consumptionAmount = amount;
+    public void setElectricalConsumptionAmount(int amount){
+        electricalConsumptionAmount = amount;
     }
 
-    public void setTariff(double tariff) {
-        this.tariff = tariff;
+    public void setElectricalTariff(double tariff) {
+        this.electricalTariff = tariff;
     }
 
 }

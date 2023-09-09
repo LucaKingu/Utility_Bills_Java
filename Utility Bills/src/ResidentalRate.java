@@ -1,27 +1,25 @@
-import java.util.Scanner;
-
 public class ResidentalRate extends RateCategory implements CanElectricalCalculator{
 
 
     @Override
-    public double calculateElectricity() {
+    public double calculateElectricityBill() {
 
         double tariff;
 
 
-        if(getConsumptionAmount() >= 0 && getConsumptionAmount() <= 2000)
+        if(getElectricalConsumptionAmount() >= 0 && getElectricalConsumptionAmount() <= 2000)
         {
             tariff = 0.1047;
         }
-        else if(getConsumptionAmount() >= 2001 && getConsumptionAmount() <= 6000)
+        else if(getElectricalConsumptionAmount() >= 2001 && getElectricalConsumptionAmount() <= 6000)
         {
             tariff = 0.1298;
         }
-        else if(getConsumptionAmount() >= 6001 && getConsumptionAmount() <= 10_000)
+        else if(getElectricalConsumptionAmount() >= 6001 && getElectricalConsumptionAmount() <= 10_000)
         {
             tariff = 0.1607;
         }
-        else if(getConsumptionAmount() >= 10_001 && getConsumptionAmount() <= 20_000)
+        else if(getElectricalConsumptionAmount() >= 10_001 && getElectricalConsumptionAmount() <= 20_000)
         {
             tariff = 0.3420;
         }
@@ -29,8 +27,13 @@ public class ResidentalRate extends RateCategory implements CanElectricalCalcula
         {
             tariff = 0.6076;
         }
-        setTariff(tariff);
-        double total = getConsumptionAmount() * tariff;
+        setElectricalTariff(tariff);
+        double total = getElectricalConsumptionAmount() * tariff;
         return total;
+    }
+
+    @Override
+    public double calculateWaterBill() {
+        return 0;
     }
 }

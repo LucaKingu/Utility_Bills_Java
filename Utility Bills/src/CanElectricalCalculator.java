@@ -1,3 +1,4 @@
 public interface CanElectricalCalculator {
-    double calculateElectricity();
+    double calculateElectricityBill();
+    double calculateWaterBill();
 }

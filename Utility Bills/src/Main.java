@@ -3,8 +3,8 @@ public class Main {
 
 
         ResidentalRate resident = new ResidentalRate();
-        resident.setConsumptionAmount(2500);
-        System.out.println(resident.calculateElectricity());
+        resident.setElectricalConsumptionAmount(2500);
+        System.out.println(resident.calculateElectricityBill());
     }
 }
 
