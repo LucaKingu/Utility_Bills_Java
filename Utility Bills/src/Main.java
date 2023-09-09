@@ -1,6 +1,5 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world!");
 
         /*
             INTERFACE > ELECTRICITYCALCULATOR
@@ -11,10 +10,11 @@ public class Main {
             >RESDIENTAL INHERITS RateCategory
             >NON-RESDIENTAL INHERITS RateCategory
             >DOMESTICAL INHERITS RateCategory
-            INCLUDES CumulativeConsumption
-                     ConsumptionTariff
+            INCLUDES consumptionAmount
+                     Tariff
 
         */
+
 
     }
 }

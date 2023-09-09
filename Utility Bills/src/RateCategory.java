@@ -1,15 +1,15 @@
+import java.util.Scanner;
+
 public class RateCategory {
 
     private int consumptionAmount = 0;
 
-    public RateCategory(int consumptionAmount)
-    {
-        this.consumptionAmount = consumptionAmount;
+    public int getConsumptionAmount(){
+        return consumptionAmount;
     }
 
-
-    public float consumptionTariff(float tariff)
-    {
-            return consumptionAmount * tariff;
+    public void setConsumptionAmount(int amount){
+        consumptionAmount = amount;
     }
+
 }
