@@ -59,4 +59,12 @@ public class DomesticRate extends RateCategory implements CanUtilityCalculator{
         }
         return tax;
     }
+
+    public double totalAmount(){
+        double electricTotal = calculateElectricityBill();
+        double waterTotal = calculateWaterBill();
+        double total = waterTotal + electricTotal;
+        return total;
+    }
+
 }

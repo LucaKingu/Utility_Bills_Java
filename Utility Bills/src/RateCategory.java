@@ -1,16 +1,16 @@
 public class RateCategory {
 
-    private int electricalConsumptionAmount = 0;
+    private double electricalConsumptionAmount = 0;
     private double electricalTariff = 0;
-    private int cubicMeters = 0;
+    private double cubicMeters = 0;
     private double waterTariff = 0;
 
 
-    public int getElectricalConsumptionAmount(){
+    public double getElectricalConsumptionAmount(){
         return electricalConsumptionAmount;
     }
 
-    public void setElectricalConsumptionAmount(int amount){
+    public void setElectricalConsumptionAmount(double amount){
         electricalConsumptionAmount = amount;
     }
 
@@ -30,11 +30,11 @@ public class RateCategory {
         this.waterTariff = waterTariff;
     }
 
-    public int getCubicMeters() {
+    public double getCubicMeters() {
         return cubicMeters;
     }
 
-    public void setCubicMeters(int cubicMeters) {
+    public void setCubicMeters(double cubicMeters) {
         this.cubicMeters = cubicMeters;
     }
 }

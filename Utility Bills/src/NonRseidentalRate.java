@@ -112,4 +112,12 @@ public class NonRseidentalRate extends RateCategory implements CanUtilityCalcula
         }
         return tax;
     }
+
+    public double totalAmount(){
+        double electricTotal = calculateElectricityBill();
+        double waterTotal = calculateWaterBill();
+        double total = waterTotal + electricTotal;
+        return total;
+    }
+
 }
