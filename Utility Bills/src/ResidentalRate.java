@@ -54,7 +54,7 @@ public class ResidentalRate extends RateCategory implements CanUtilityCalculator
             tariff = 1.3965;
             tax = getCubicMeters() * tariff;
         }
-        else if (getCubicMeters() > 33)
+        else
         {
             tariff = 5.1395;
             tax += 33 * 1.3965;

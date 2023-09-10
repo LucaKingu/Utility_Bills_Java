@@ -44,6 +44,19 @@ public class DomesticRate extends RateCategory implements CanUtilityCalculator{
 
     @Override
     public double calculateWaterBill() {
-        return 0;
+        double tariff = 0;
+        double tax = 0;
+
+        if (getCubicMeters() <= 33) {
+            tariff = 2.1850;
+            tax = getCubicMeters() * tariff;
+        }
+        else
+        {
+            tariff = 5.1395;
+            tax += 33 * 2.1850;
+            tax += (getCubicMeters() - 33) * tariff;
+        }
+        return tax;
     }
 }
