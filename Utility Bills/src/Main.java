@@ -44,8 +44,21 @@ public class Main {
                 break;
 
             case 3:
-                System.out.println("Domestitc");
+                var domesticRate = new DomesticRate();
+                System.out.println("Input electrical consumption:");
+                int domesticElectricalInput = userInput.nextInt();
+                domesticRate.setElectricalConsumptionAmount(domesticElectricalInput);
 
+                System.out.println("Input water consumption(in m3)");
+                int domesticWaterConsumption = userInput.nextInt();
+                domesticRate.setCubicMeters(domesticWaterConsumption);
+
+                System.out.println("Your Payment for electricity: €"+domesticRate.calculateElectricityBill() +" kWh");
+                System.out.println("at a rate of " +domesticRate.getElectricalTariff() +" c/kWh");
+
+                System.out.println("\nYour payment for water: €"+domesticRate.calculateWaterBill());
+                System.out.println("at a rate of €"+domesticRate.getWaterTariff() +" m^3");
+                break;
         }
     }
 }
