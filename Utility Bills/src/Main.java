@@ -31,11 +31,11 @@ public class Main {
             case 2:
                 var nonRseidentalRate = new NonRseidentalRate();
                 System.out.println("Input electrical consumption(in kWh):");
-                double nonResidentElectricalInput = userInput.nextInt();
+                double nonResidentElectricalInput = userInput.nextDouble();
                 nonRseidentalRate.setElectricalConsumptionAmount(nonResidentElectricalInput);
 
                 System.out.println("Input water consumption(in m^3)");
-                double nonResidentWaterConsumption = userInput.nextInt();
+                double nonResidentWaterConsumption = userInput.nextDouble();
                 nonRseidentalRate.setCubicMeters(nonResidentWaterConsumption);
 
                 double nonResidentElectricFormat = Double.parseDouble(format.format(nonRseidentalRate.calculateElectricityBill()));
@@ -49,11 +49,11 @@ public class Main {
             case 3:
                 var domesticRate = new DomesticRate();
                 System.out.println("Input electrical consumption(in kWh):");
-                double domesticElectricalInput = userInput.nextInt();
+                double domesticElectricalInput = userInput.nextDouble();
                 domesticRate.setElectricalConsumptionAmount(domesticElectricalInput);
 
                 System.out.println("Input water consumption(in m^3)");
-                double domesticWaterConsumption = userInput.nextInt();
+                double domesticWaterConsumption = userInput.nextDouble();
                 domesticRate.setCubicMeters(domesticWaterConsumption);
 
                 double domesticElectricFormat = Double.parseDouble(format.format(domesticRate.calculateElectricityBill()));
