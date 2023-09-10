@@ -1,4 +1,4 @@
-public interface CanElectricalCalculator {
+public interface CanUtilityCalculator {
     double calculateElectricityBill();
     double calculateWaterBill();
 }

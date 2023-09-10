@@ -1,4 +1,4 @@
-public class ResidentalRate extends RateCategory implements CanElectricalCalculator {
+public class ResidentalRate extends RateCategory implements CanUtilityCalculator {
 
 
     @Override
