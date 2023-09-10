@@ -19,11 +19,8 @@ public class Main {
                 int residentWaterConsumption = userInput.nextInt();
                 resident.setCubicMeters(residentWaterConsumption);
 
-                System.out.println("Your Payment for electricity: €"+resident.calculateElectricityBill() +" kWh");
-                System.out.println("at a rate of " +resident.getElectricalTariff() +" c/kWh");
-
-                System.out.println("\nYour payment for water: €"+resident.calculateWaterBill());
-                System.out.println("at a rate of €"+resident.getWaterTariff() +" m^3");
+                System.out.println("\nYour Payment for electricity: €"+resident.calculateElectricityBill() +);
+                System.out.println("Your payment for water: €"+resident.calculateWaterBill());
                 break;
 
             case 2:
@@ -36,11 +33,8 @@ public class Main {
                 int nonResidentWaterConsumption = userInput.nextInt();
                 nonRseidentalRate.setCubicMeters(nonResidentWaterConsumption);
 
-                System.out.println("Your Payment for electricity: €"+nonRseidentalRate.calculateElectricityBill() +" kWh");
-                System.out.println("at a rate of " +nonRseidentalRate.getElectricalTariff() +" c/kWh");
-
-                System.out.println("\nYour payment for water: €"+nonRseidentalRate.calculateWaterBill());
-                System.out.println("at a rate of €"+nonRseidentalRate.getWaterTariff() +" m^3");
+                System.out.println("\nYour Payment for electricity: €"+nonRseidentalRate.calculateElectricityBill());
+                System.out.println("Your payment for water: €"+nonRseidentalRate.calculateWaterBill());
                 break;
 
             case 3:
@@ -53,11 +47,8 @@ public class Main {
                 int domesticWaterConsumption = userInput.nextInt();
                 domesticRate.setCubicMeters(domesticWaterConsumption);
 
-                System.out.println("Your Payment for electricity: €"+domesticRate.calculateElectricityBill() +" kWh");
-                System.out.println("at a rate of " +domesticRate.getElectricalTariff() +" c/kWh");
-
-                System.out.println("\nYour payment for water: €"+domesticRate.calculateWaterBill());
-                System.out.println("at a rate of €"+domesticRate.getWaterTariff() +" m^3");
+                System.out.println("\nYour Payment for electricity: €"+domesticRate.calculateElectricityBill());
+                System.out.println("Your payment for water: €"+domesticRate.calculateWaterBill());
                 break;
         }
     }

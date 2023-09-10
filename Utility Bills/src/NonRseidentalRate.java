@@ -90,6 +90,26 @@ public class NonRseidentalRate extends RateCategory implements CanUtilityCalcula
 
     @Override
     public double calculateWaterBill() {
-        return 0;
+        double tariff = 0;
+        double tax = 0;
+
+        if (getCubicMeters() <= 168) {
+            tariff = 1.9950;
+            tax = getCubicMeters() * tariff;
+        }
+        else if (getCubicMeters() <= 40_000)
+        {
+            tariff = 2.3750;
+            tax += 168 * 1.9950;
+            tax += (getCubicMeters() - 168) * tariff;
+        }
+        else
+        {
+            tariff = 1.6625;
+            tax += 33 * 1.9950;
+            tax += 40_000 * 2.3750;
+            tax += (getCubicMeters() - 40_000) * tariff;
+        }
+        return tax;
     }
 }
