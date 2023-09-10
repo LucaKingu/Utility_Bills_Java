@@ -45,7 +45,7 @@ public class NonRseidentalRate extends RateCategory implements CanUtilityCalcula
             tax = 2000 * 0.1215;
             tax += 4000 * 0.1275;
             tax += 4000 * 0.1373;
-            tax += 10_000 * 0.3420;
+            tax += 10_000 * 0.1485;
             tax += 40_000 * 0.1613;
             tax += (getElectricalConsumptionAmount() - 40_000) * tariff;
         }
@@ -55,7 +55,7 @@ public class NonRseidentalRate extends RateCategory implements CanUtilityCalcula
             tax = 2000 * 0.1215;
             tax += 4000 * 0.1275;
             tax += 4000 * 0.1373;
-            tax += 10_000 * 0.3420;
+            tax += 10_000 * 0.1485;
             tax += 40_000 * 0.1613;
             tax += 40_000 * 0.1500;
             tax += (getElectricalConsumptionAmount() - 900_000) * tariff;
@@ -66,7 +66,7 @@ public class NonRseidentalRate extends RateCategory implements CanUtilityCalcula
             tax = 2000 * 0.1215;
             tax += 4000 * 0.1275;
             tax += 4000 * 0.1373;
-            tax += 10_000 * 0.3420;
+            tax += 10_000 * 0.1485;
             tax += 40_000 * 0.1613;
             tax += 40_000 * 0.1500;
             tax += 900_000 * 0.1403;
@@ -78,7 +78,7 @@ public class NonRseidentalRate extends RateCategory implements CanUtilityCalcula
             tax = 2000 * 0.1215;
             tax += 4000 * 0.1275;
             tax += 4000 * 0.1373;
-            tax += 10_000 * 0.3420;
+            tax += 10_000 * 0.1485;
             tax += 40_000 * 0.1613;
             tax += 40_000 * 0.1500;
             tax += 900_000 * 0.1403;
