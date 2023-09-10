@@ -25,7 +25,7 @@ public class Main {
                         throw new IllegalArgumentException("Neither of the values can be negative");
                     }
 
-                    if(residentElectricalconsumption > Double.MAX_VALUE || residentWaterConsumption < Double.MAX_VALUE){
+                    if(residentElectricalconsumption > Double.MAX_VALUE || residentWaterConsumption > Double.MAX_VALUE){
                         throw new IllegalArgumentException("Invalid number input");
                     }
 
@@ -56,7 +56,7 @@ public class Main {
                         throw new IllegalArgumentException("Neither of the values can be negative");
                     }
 
-                    if(nonResidentElectricalInput > Double.MAX_VALUE || nonResidentWaterConsumption < Double.MAX_VALUE){
+                    if(nonResidentElectricalInput > Double.MAX_VALUE || nonResidentWaterConsumption > Double.MAX_VALUE){
                         throw new IllegalArgumentException("Invalid number input");
                     }
 
@@ -83,11 +83,11 @@ public class Main {
                     double domesticWaterConsumption = userInput.nextDouble();
                     domesticRate.setCubicMeters(domesticWaterConsumption);
 
-                    if(domesticElectricalInput < 0 || domesticWaterConsumption <0){
+                    if(domesticElectricalInput < 0 || domesticWaterConsumption < 0){
                         throw new IllegalArgumentException("Neither of the values can be negative");
                     }
 
-                    if(domesticElectricalInput > Double.MAX_VALUE || domesticWaterConsumption < Double.MAX_VALUE){
+                    if(domesticElectricalInput > Double.MAX_VALUE || domesticWaterConsumption > Double.MAX_VALUE){
                         throw new IllegalArgumentException("Invalid number input");
                     }
 
