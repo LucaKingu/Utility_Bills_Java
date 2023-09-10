@@ -11,25 +11,26 @@ public class Main {
         switch (choice){
             case 1:
                 var resident = new ResidentalRate();
-                System.out.println("Input electrical consumption:");
+                System.out.println("Input electrical consumption(in kWh):");
                 int residentElectricalconsumption = userInput.nextInt();
                 resident.setElectricalConsumptionAmount(residentElectricalconsumption);
 
-                System.out.println("Input water consumption(in m3)");
+                System.out.println("Input water consumption(in m^3)");
                 int residentWaterConsumption = userInput.nextInt();
                 resident.setCubicMeters(residentWaterConsumption);
 
                 System.out.println("\nYour Payment for electricity: €"+resident.calculateElectricityBill());
                 System.out.println("Your payment for water: €"+resident.calculateWaterBill());
+                //System.out.println("Total: €" +resident.calculateWaterBill() + resident.calculateWaterBill());
                 break;
 
             case 2:
                 var nonRseidentalRate = new NonRseidentalRate();
-                System.out.println("Input electrical consumption:");
+                System.out.println("Input electrical consumption(in kWh):");
                 int nonResidentElectricalInput = userInput.nextInt();
                 nonRseidentalRate.setElectricalConsumptionAmount(nonResidentElectricalInput);
 
-                System.out.println("Input water consumption(in m3)");
+                System.out.println("Input water consumption(in m^3)");
                 int nonResidentWaterConsumption = userInput.nextInt();
                 nonRseidentalRate.setCubicMeters(nonResidentWaterConsumption);
 
@@ -39,11 +40,11 @@ public class Main {
 
             case 3:
                 var domesticRate = new DomesticRate();
-                System.out.println("Input electrical consumption:");
+                System.out.println("Input electrical consumption(in kWh):");
                 int domesticElectricalInput = userInput.nextInt();
                 domesticRate.setElectricalConsumptionAmount(domesticElectricalInput);
 
-                System.out.println("Input water consumption(in m3)");
+                System.out.println("Input water consumption(in m^3)");
                 int domesticWaterConsumption = userInput.nextInt();
                 domesticRate.setCubicMeters(domesticWaterConsumption);
 
