@@ -19,7 +19,7 @@ public class Main {
                 int residentWaterConsumption = userInput.nextInt();
                 resident.setCubicMeters(residentWaterConsumption);
 
-                System.out.println("\nYour Payment for electricity: €"+resident.calculateElectricityBill() +);
+                System.out.println("\nYour Payment for electricity: €"+resident.calculateElectricityBill());
                 System.out.println("Your payment for water: €"+resident.calculateWaterBill());
                 break;
 

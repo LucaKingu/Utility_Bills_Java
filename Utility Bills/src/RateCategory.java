@@ -10,12 +10,12 @@ public class RateCategory {
         return electricalConsumptionAmount;
     }
 
-    public double getElectricalTariff(){
-        return electricalTariff;
-    }
-
     public void setElectricalConsumptionAmount(int amount){
         electricalConsumptionAmount = amount;
+    }
+
+    public double getElectricalTariff(){
+        return electricalTariff;
     }
 
     public void setElectricalTariff(double tariff) {
